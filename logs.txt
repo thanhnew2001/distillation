@@ -1,0 +1,144 @@
+[DATA] Upload Data
+[DATA] Reset Data
+[DATA] keep only important columns
+[DATA]  transformed_data[['Authors', 'Title', 'Year', 'Source title', 'Volume', 'Issue', 'Art. No.', 'Page start', 'Page end', 'Page count', 'Cited by', 'DOI', 'Link', 'Affiliations', 'Authors with affiliations', 'Abstract', 'Author Keywords', 'Index Keywords', 'Document Type', 'Publication Stage', 'Open Access Source', 'EID']
+[DATA] keep only important columns
+[DATA]  transformed_data[['Authors', 'Title', 'Year', 'Source title', 'Volume', 'Issue', 'Art. No.', 'Page start', 'Page end', 'Page count', 'Cited by', 'DOI', 'Link', 'Affiliations', 'Authors with affiliations', 'Abstract', 'Author Keywords', 'Index Keywords', 'Document Type', 'Publication Stage', 'Open Access Source', 'EID']
+[ERROR]  transformed_data[['Authors', 'Title', 'Year', 'Source title', 'Volume', 'Issue', 'Art. No.', 'Page start', 'Page end', 'Page count', 'Cited by', 'DOI', 'Link', 'Affiliations', 'Authors with affiliations', 'Abstract', 'Author Keywords', 'Index Keywords', 'Document Type', 'Publication Stage', 'Open Access Source', 'EID'] --- '[' was never closed (<string>, line 1)
+[ERROR]  transformed_data[['Authors', 'Title', 'Year', 'Source title', 'Volume', 'Issue', 'Art. No.', 'Page start', 'Page end', 'Page count', 'Cited by', 'DOI', 'Link', 'Affiliations', 'Authors with affiliations', 'Abstract', 'Author Keywords', 'Index Keywords', 'Document Type', 'Publication Stage', 'Open Access Source', 'EID'] --- '[' was never closed (<string>, line 1)
+[DATA] keep only title, author, publisher, year of publication and abstract
+[DATA]  transformed_data[['Title', 'Authors', 'Year', 'Abstract']]
+[DATA] Data Manipulation Successful!
+[DATA] display count papers by year
+[DATA]  transformed_data.groupby('Year').count().reset_index()
+[DATA] Data Manipulation Successful!
+[DATA] display author with more than one paper
+[DATA]  transformed_data.groupby('Authors').filter(lambda x: len(x) > 1).reset_index()
+[DATA] Data Manipulation Successful!
+[DATA] Reset Data
+[DATA] display all papers whose abstracts contain keyword computer
+[DATA]  transformed_data[transformed_data['Abstract'].str.contains('computer')]
+[DATA] Data Manipulation Successful!
+[DATA] display all papers whose abstracts has more than 100 words
+[DATA]  transformed_data[transformed_data['Abstract'].str.split().str.len() > 100]
+[DATA] Data Manipulation Successful!
+[DATA] display all papers whose abstracts has less than 100 words
+[DATA]  transformed_data[transformed_data['Abstract'].str.split().str.len() > 100]
+[DATA] Data Manipulation Successful!
+[DATA] display all papers
+[DATA]  transformed_data
+[DATA] Data Manipulation Successful!
+[DATA] display all papers whose title contain the word programming
+[DATA]  transformed_data[transformed_data['Title'].str.contains('programming', case=False)]
+[DATA] Data Manipulation Successful!
+[DATA] display all papers whose abstracts contain more than 50 words
+[DATA]  transformed_data[transformed_data['Abstract'].str.split().str.len() > 50]
+[DATA] Data Manipulation Successful!
+[DATA] display all papers whose abstracts contain more than 5000 words
+[DATA]  transformed_data[transformed_data['Abstract'].str.split().str.len() > 5000]
+[DATA] Data Manipulation Successful!
+[DATA] display all papers whose abstracts contain less than 5000 words
+[DATA]  transformed_data[transformed_data['Abstract'].str.split().str.len() > 5000]
+[DATA] Data Manipulation Successful!
+[DATA] display all papers with title, authors, year, journals
+[DATA]  transformed_data[['Authors', 'Title', 'Year', 'Source title', 'Volume', 'Issue', 'Art. No.', 'Page start', 'Page end', 'Page count', 'Cited by', 'Link', 'Affiliations', 'Authors with affiliations', 'Abstract', 'Author Keywords', 'Index Keywords', 'Document Type', 'Publication Stage', 'Open Access Source', 'Source EID'
+[ERROR]  transformed_data[['Authors', 'Title', 'Year', 'Source title', 'Volume', 'Issue', 'Art. No.', 'Page start', 'Page end', 'Page count', 'Cited by', 'Link', 'Affiliations', 'Authors with affiliations', 'Abstract', 'Author Keywords', 'Index Keywords', 'Document Type', 'Publication Stage', 'Open Access Source', 'Source EID' --- '[' was never closed (<string>, line 1)
+[DATA] display all papers with title, authors, year
+[DATA]  transformed_data[['Authors', 'Title', 'Year', 'Source title', 'Volume', 'Issue', 'Art. No.', 'Page start', 'Page end', 'Page count', 'Cited by', 'DOI', 'Link', 'Affiliations', 'Authors with affiliations', 'Abstract', 'Author Keywords', 'Index Keywords', 'Document Type', 'Publication Stage', 'Open Access Source', 'Source EID']
+[ERROR]  transformed_data[['Authors', 'Title', 'Year', 'Source title', 'Volume', 'Issue', 'Art. No.', 'Page start', 'Page end', 'Page count', 'Cited by', 'DOI', 'Link', 'Affiliations', 'Authors with affiliations', 'Abstract', 'Author Keywords', 'Index Keywords', 'Document Type', 'Publication Stage', 'Open Access Source', 'Source EID'] --- '[' was never closed (<string>, line 1)
+[DATA] Reset Data
+[DATA] display all papers with title, authors, year
+[DATA]  transformed_data[['Authors', 'Title', 'Year', 'Source title', 'Volume', 'Issue', 'Art. No.', 'Page start', 'Page end', 'Page count', 'Cited by', 'DOI', 'Link', 'Affiliations', 'Authors with affiliations', 'Abstract', 'Author Keywords', 'Index Keywords', 'Document Type', 'Publication Stage', 'Open Access Source', 'Source EID']
+[ERROR]  transformed_data[['Authors', 'Title', 'Year', 'Source title', 'Volume', 'Issue', 'Art. No.', 'Page start', 'Page end', 'Page count', 'Cited by', 'DOI', 'Link', 'Affiliations', 'Authors with affiliations', 'Abstract', 'Author Keywords', 'Index Keywords', 'Document Type', 'Publication Stage', 'Open Access Source', 'Source EID'] --- '[' was never closed (<string>, line 1)
+[DATA] Upload Data
+[DATA] Reset Data
+[DATA] Upload Data
+[DATA] Reset Data
+[REPORT] list only 5 first rows
+[DATA] list only 5 first rows
+[DATA]  transformed_data.iloc[:5, :]
+[DATA] Data Manipulation Successful!
+[DATA] Reset Data
+[DATA] Upload Data
+[DATA] Reset Data
+[DATA] list only 5 first rows
+[DATA]  transformed_data.head()
+[DATA] Data Manipulation Successful!
+[DATA] Upload Data
+[DATA] Reset Data
+[DATA] how many developers by education level
+[DATA] 1
+[ERROR] 1 --- DataFrame constructor not properly called!
+[DATA] show number of  developers by education level
+[DATA]  transformed_data.groupby(['EdLevel']).size().reset_index(name='count')
+[DATA] Data Manipulation Successful!
+[PLOT] draw a bar chart
+[PLOT] <|{transformed_data}|chart|type=bar|x=count|y=EdLevel|>
+[PLOT] Plot Successful!
+[PLOT] draw a bar chart number of developers by eduction level
+[PLOT] <|{transformed_data}|chart|type=bar|x=EdLevel|y=count|title=EdLevel by count|>
+[PLOT] Plot Successful!
+[PLOT] draw a bar chart number of developers by eduction level and country
+[PLOT] <|{transformed_data}|chart|type=bar|x=EdLevel|y=Developers|color=Country|>
+[PLOT] Plot Successful!
+[DATA] show number of  developers by country
+[DATA]  transformed_data.groupby(['EdLevel']).count().reset_index()
+[DATA] Data Manipulation Successful!
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] show number of  developers by country
+[DATA]  transformed_data.groupby(['EdLevel']).count().reset_index()
+[DATA] Data Manipulation Successful!
+[DATA] Reset Data
+[DATA] chỉ hiện cột trình độ và quốc gia
+[DATA] chỉ hiện cột trình độ và quốc gia
+[DATA]  transformed_data[['EdLevel', 'Country', 'ConvertedCompYearly']]
+[DATA]  transformed_data[['EdLevel', 'Country', 'ConvertedCompYearly']]
+[DATA] Data Manipulation Successful!
+[DATA] Data Manipulation Successful!
+[DATA] chỉ hiện cột trình độ và quốc gia, chỉ hiện quốc gia ở châu Á
+[DATA] chỉ hiện cột trình độ và quốc gia, chỉ hiện quốc gia ở châu Á
+[DATA]  transformed_data.loc[:, ['EdLevel', 'Country', 'ConvertedCompYearly']]
+[DATA]  transformed_data.loc[:, ['EdLevel', 'Country', 'ConvertedCompYearly']]
+[DATA] Data Manipulation Successful!
+[DATA] Data Manipulation Successful!
+[DATA] chỉ hiện quốc gia ở châu Á
+[DATA]  transformed_data[transformed_data['Country'] == 'United States']
+[DATA] Data Manipulation Successful!
+[DATA] show only countries in Asia
+[DATA]  transformed_data[transformed_data['Country'].isin(asia_countries)]
+[ERROR]  transformed_data[transformed_data['Country'].isin(asia_countries)] --- name 'asia_countries' is not defined
+[DATA] show only countries in Asia
+[DATA]  transformed_data[transformed_data['Country'].isin(asia_countries)]
+[ERROR]  transformed_data[transformed_data['Country'].isin(asia_countries)] --- name 'asia_countries' is not defined
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] Reset Data
+[DATA] show only countries in Asia
+[DATA]  transformed_data[transformed_data['Country'].isin(asia_countries)]
+[ERROR]  transformed_data[transformed_data['Country'].isin(asia_countries)] --- name 'asia_countries' is not defined
+[DATA] show  number of developers by org sie
+[DATA]  transformed_data.groupby(['EdLevel', 'Country']).agg({'ConvertedCompYearly': ['count']}).reset_index()
+[ERROR]  transformed_data.groupby(['EdLevel', 'Country']).agg({'ConvertedCompYearly': ['count']}).reset_index() --- sequence item 0: expected str instance, tuple found
+[DATA] show  number of developers by org size
+[DATA]  transformed_data.groupby(['EdLevel', 'Country']).ConvertedCompYearly.count().unstack().reset_index()
+[ERROR]  transformed_data.groupby(['EdLevel', 'Country']).ConvertedCompYearly.count().unstack().reset_index() --- "None of [Index(['ConvertedCompYearly'], dtype='object')] are in the [columns]"
+[DATA] Reset Data
+[DATA] show  number of developers by org size
+[DATA]  transformed_data.groupby(['EdLevel', 'Country']).ConvertedCompYearly.count().unstack().reset_index()
+[DATA] Data Manipulation Successful!
+[DATA] Reset Data
+[DATA] show  number of developers by org size
+[DATA]  transformed_data.groupby(['EdLevel', 'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Bolivia', 'Bosnia and Herzegovina', 'Cape Verde', 'Côte d\'Ivoire', 'Democratic Republic of the Congo', 'Ecuador', 'El Salvador', 'Gabon', 'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Kenya', 'Liberia', 'Madagas.reset_index()
+[ERROR]  transformed_data.groupby(['EdLevel', 'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Bolivia', 'Bosnia and Herzegovina', 'Cape Verde', 'Côte d\'Ivoire', 'Democratic Republic of the Congo', 'Ecuador', 'El Salvador', 'Gabon', 'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Kenya', 'Liberia', 'Madagas.reset_index() --- unterminated string literal (detected at line 1) (<string>, line 1)
+[DATA] show  number of developers by org size
+[DATA]  transformed_data.groupby(['EdLevel', 'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Bolivia', 'Bosnia and Herzegovina', 'Cape Verde', 'Côte d\'Ivoire', 'Democratic Republic of the Congo', 'Ecuador', 'El Salvador', 'Gabon', 'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Kenya', 'Liberia', 'Madagas.reset_index()
+[ERROR]  transformed_data.groupby(['EdLevel', 'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Bolivia', 'Bosnia and Herzegovina', 'Cape Verde', 'Côte d\'Ivoire', 'Democratic Republic of the Congo', 'Ecuador', 'El Salvador', 'Gabon', 'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Kenya', 'Liberia', 'Madagas.reset_index() --- unterminated string literal (detected at line 1) (<string>, line 1)

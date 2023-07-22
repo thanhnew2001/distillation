@@ -1,0 +1,372 @@
+{
+  "id": "f2fe3536-70c9-445f-8967-bb40ad63ea38",
+  "version": "2.0",
+  "name": "toaan",
+  "url": "https://congbobanan.toaan.gov.vn",
+  "tests": [{
+    "id": "73b723f8-24ee-476a-8506-aff244b0674f",
+    "name": "crawlpdf",
+    "commands": [{
+      "id": "a4ff7b75-04ba-48e3-a3a3-94d4640a78b0",
+      "comment": "",
+      "command": "open",
+      "target": "/0tat1cvn/ban-an-quyet-dinh",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b1483b5-7fcc-4c09-aad4-d40be3c9e10f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1166x857",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59cd99df-e4c5-4b89-8e2e-8537b6d304cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top",
+      "targets": [
+        ["id=ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top", "id"],
+        ["name=ctl00$Content_home_Public$ctl00$Rad_DATE_FROM_top", "name"],
+        ["css=#ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top", "css:finder"],
+        ["xpath=//input[@id='ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_search_top']/div/div/div/div[5]/div[2]/ul/li/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad7f7e80-3b09-4419-92fc-241a1ccbd534",
+      "comment": "",
+      "command": "type",
+      "target": "id=ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top",
+      "targets": [
+        ["id=ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top", "id"],
+        ["name=ctl00$Content_home_Public$ctl00$Rad_DATE_FROM_top", "name"],
+        ["css=#ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top", "css:finder"],
+        ["xpath=//input[@id='ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_search_top']/div/div/div/div[5]/div[2]/ul/li/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "01/01/2000"
+    }, {
+      "id": "acd37fea-2b8d-485f-8eaf-32329db02f86",
+      "comment": "",
+      "command": "type",
+      "target": "id=ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top",
+      "targets": [
+        ["id=ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top", "id"],
+        ["name=ctl00$Content_home_Public$ctl00$Rad_DATE_FROM_top", "name"],
+        ["css=#ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top", "css:finder"],
+        ["xpath=//input[@id='ctl00_Content_home_Public_ctl00_Rad_DATE_FROM_top']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_search_top']/div/div/div/div[5]/div[2]/ul/li/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "01/01/2013"
+    }, {
+      "id": "908cafa9-d619-40ea-b01a-689b67daf81b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(6) > .col-sm-4:nth-child(3)",
+      "targets": [
+        ["css=.row:nth-child(6) > .col-sm-4:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_search_top']/div/div/div/div[6]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[6]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bb06bce-14db-4a7a-be5e-a13c37960144",
+      "comment": "",
+      "command": "click",
+      "target": "id=ctl00_Content_home_Public_ctl00_Drop_CASES_STYLES_SEARCH_top",
+      "targets": [
+        ["id=ctl00_Content_home_Public_ctl00_Drop_CASES_STYLES_SEARCH_top", "id"],
+        ["name=ctl00$Content_home_Public$ctl00$Drop_CASES_STYLES_SEARCH_top", "name"],
+        ["css=#ctl00_Content_home_Public_ctl00_Drop_CASES_STYLES_SEARCH_top", "css:finder"],
+        ["xpath=//select[@id='ctl00_Content_home_Public_ctl00_Drop_CASES_STYLES_SEARCH_top']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_search_top']/div/div/div/div[4]/div[2]/ul/li/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/ul/li/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "219842ca-b7ff-4950-a4d7-2d176e3bda48",
+      "comment": "",
+      "command": "select",
+      "target": "id=ctl00_Content_home_Public_ctl00_Drop_CASES_STYLES_SEARCH_top",
+      "targets": [],
+      "value": "label=Dân sự"
+    }, {
+      "id": "bb52fc28-4448-4999-a458-b7003c738cd5",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.chosen-search > .chosen-search-input",
+      "targets": [
+        ["css=.chosen-search > .chosen-search-input", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_Ra_Case_shows_search_top_chosen']/div/div/input", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "826cc40c-c7a2-468c-83a9-af6dbe0e6175",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.chosen-single > span:nth-child(1)",
+      "targets": [
+        ["css=.chosen-single > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_Ra_Case_shows_search_top_chosen']/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/ul/li/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "878c3b7f-8990-4c18-8d41-19d78da32be4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active-result:nth-child(3)",
+      "targets": [
+        ["css=.active-result:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_Ra_Case_shows_search_top_chosen']/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div/ul/li[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2664612d-a832-42eb-a5f3-0fab0789faa0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=ctl00_Content_home_Public_ctl00_Button2",
+      "targets": [
+        ["id=ctl00_Content_home_Public_ctl00_Button2", "id"],
+        ["name=ctl00$Content_home_Public$ctl00$Button2", "name"],
+        ["css=#ctl00_Content_home_Public_ctl00_Button2", "css:finder"],
+        ["xpath=//input[@id='ctl00_Content_home_Public_ctl00_Button2']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_search_top']/div/div/div/div[6]/div[3]/ul/li/div/input[2]", "xpath:idRelative"],
+        ["xpath=//li/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ceab6fe0-d4b2-448e-95d8-7c792c4f832f",
+      "comment": "",
+      "command": "click",
+      "target": "id=ctl00_Content_home_Public_ctl00_cmd_search_banner",
+      "targets": [
+        ["id=ctl00_Content_home_Public_ctl00_cmd_search_banner", "id"],
+        ["name=ctl00$Content_home_Public$ctl00$cmd_search_banner", "name"],
+        ["css=#ctl00_Content_home_Public_ctl00_cmd_search_banner", "css:finder"],
+        ["xpath=//input[@id='ctl00_Content_home_Public_ctl00_cmd_search_banner']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_search_top']/div/div/div/div[6]/div[3]/ul/li/div/input", "xpath:idRelative"],
+        ["xpath=//li/div/input", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9811",
+      "windowTimeout": 2000
+    }, {
+      "id": "77bedbbb-d3dd-4b8f-b02a-83bffeda5cfe",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2753c24-48f4-40cc-906a-3950231f4165",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9811}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d34c8551-342d-404e-a303-2277ee2ea393",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tải quyết định",
+      "targets": [
+        ["linkText=Tải quyết định", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Tải quyết định')]", "xpath:link"],
+        ["xpath=//div[@id='exTab3']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#2b')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tải quyết định')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97ec3b7a-a6c7-4b92-92b9-b4a1fa266421",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=132/2023/QĐST-DS.pdf",
+      "targets": [
+        ["linkText=132/2023/QĐST-DS.pdf", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'132/2023/QĐST-DS.pdf')]", "xpath:link"],
+        ["xpath=//div[@id='2b']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/5ta1225967t1cvn/QUYET_DINH_SO_132_ngay_0672023_sl_cham_dut_uy_quyen.pdf')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'132/2023/QĐST-DS.pdf')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c11e9e48-0469-4d4a-9ccb-484d5f3b5930",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57ff4f81-d561-4599-b6b5-270d8a563bdc",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9811}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddbcd27c-0973-4a1b-84b1-1fe55b689981",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e049296b-7ddf-4dde-bc11-ee0c45971cae",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e7fd75e-3e68-4055-bbe3-46d43642fdc6",
+      "comment": "",
+      "command": "click",
+      "target": "id=ctl00_Content_home_Public_ctl00_cmdnext",
+      "targets": [
+        ["id=ctl00_Content_home_Public_ctl00_cmdnext", "id"],
+        ["name=ctl00$Content_home_Public$ctl00$cmdnext", "name"],
+        ["css=#ctl00_Content_home_Public_ctl00_cmdnext", "css:finder"],
+        ["xpath=//input[@id='ctl00_Content_home_Public_ctl00_cmdnext']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_search_content']/div[2]/div/div[2]/div[2]/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9798",
+      "windowTimeout": 2000
+    }, {
+      "id": "fd836021-915c-4918-a461-d4128d488ed3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9798}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b6c1f05-0043-49ce-b65a-69a4e2f005b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tải bản án",
+      "targets": [
+        ["linkText=Tải bản án", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Tải bản án')]", "xpath:link"],
+        ["xpath=//div[@id='exTab3']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#2b')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tải bản án')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b596be3-eca4-4ce7-8826-7a61dc050343",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=59.pdf",
+      "targets": [
+        ["linkText=59.pdf", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'59.pdf')]", "xpath:link"],
+        ["xpath=//div[@id='2b']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/5ta1064305t1cvn/BAN_AN_PT_LE_VAN_LUNGCHE_VAN_HOA.pdf')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'59.pdf')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce06340b-928d-44c1-9090-979220560be7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d798565a-50fb-454c-8147-61940a3ab295",
+      "comment": "",
+      "command": "click",
+      "target": "id=ctl00_Content_home_Public_ctl00_cmdnext",
+      "targets": [
+        ["id=ctl00_Content_home_Public_ctl00_cmdnext", "id"],
+        ["name=ctl00$Content_home_Public$ctl00$cmdnext", "name"],
+        ["css=#ctl00_Content_home_Public_ctl00_cmdnext", "css:finder"],
+        ["xpath=//input[@id='ctl00_Content_home_Public_ctl00_cmdnext']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_Content_home_Public_ctl00_search_content']/div[2]/div/div[2]/div[2]/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win359",
+      "windowTimeout": 2000
+    }, {
+      "id": "d03e11ea-6dd4-4669-996f-4f5e8a416140",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win359}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e86931c-6e14-427e-a486-fa26b4b5009c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tải bản án",
+      "targets": [
+        ["linkText=Tải bản án", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Tải bản án')]", "xpath:link"],
+        ["xpath=//div[@id='exTab3']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#2b')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tải bản án')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "659c4360-976b-4df9-97fd-7f25749d1c90",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=17.pdf",
+      "targets": [
+        ["linkText=17.pdf", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'17.pdf')]", "xpath:link"],
+        ["xpath=//div[@id='2b']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/5ta1217707t1cvn/BA_C_B_PDoi_tai_san.pdf')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'17.pdf')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89f9c7ff-9e3d-4d4b-b598-8ce048d9aa33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pading_search_pub > .row",
+      "targets": [
+        ["css=.pading_search_pub > .row", "css:finder"],
+        ["xpath=//form[@id='aspnetForm']/section/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/section/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7f0634b6-4708-4b7a-8c94-aa6404c5cb67",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["73b723f8-24ee-476a-8506-aff244b0674f"]
+  }],
+  "urls": ["https://congbobanan.toaan.gov.vn/"],
+  "plugins": []
+}

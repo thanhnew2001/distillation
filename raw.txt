@@ -1,0 +1,930 @@
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.3/41.3 kB 1.3 MB/s eta 0:00:00
+Requirement already satisfied: charset-normalizer>=2.0.0 in /opt/homebrew/lib/python3.11/site-packages (from pdfminer.six==20221105->pdfplumber) (3.2.0)
+Collecting cryptography>=36.0.0 (from pdfminer.six==20221105->pdfplumber)
+  Obtaining dependency information for cryptography>=36.0.0 from https://files.pythonhosted.org/packages/5a/ae/c5493024f3d9bef59021085f08bf37afd0bac50c7764cdc58327245df213/cryptography-41.0.2-cp37-abi3-macosx_10_12_universal2.whl.metadata
+  Downloading cryptography-41.0.2-cp37-abi3-macosx_10_12_universal2.whl.metadata (5.2 kB)
+Requirement already satisfied: python-dateutil>=2.8.1 in /opt/homebrew/lib/python3.11/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /opt/homebrew/lib/python3.11/site-packages (from pandas) (2022.1)
+Requirement already satisfied: numpy>=1.21.0 in /opt/homebrew/lib/python3.11/site-packages (from pandas) (1.25.1)
+Requirement already satisfied: six>=1.5 in /opt/homebrew/lib/python3.11/site-packages (from python-dateutil>=2.8.1->pandas) (1.16.0)
+Collecting cffi>=1.12 (from cryptography>=36.0.0->pdfminer.six==20221105->pdfplumber)
+  Downloading cffi-1.15.1-cp311-cp311-macosx_11_0_arm64.whl (174 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 174.2/174.2 kB 4.3 MB/s eta 0:00:00
+Collecting pycparser (from cffi>=1.12->cryptography>=36.0.0->pdfminer.six==20221105->pdfplumber)
+  Using cached pycparser-2.21-py2.py3-none-any.whl (118 kB)
+Downloading Pillow-10.0.0-cp311-cp311-macosx_11_0_arm64.whl (3.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 9.3 MB/s eta 0:00:00
+Downloading pypdfium2-4.18.0-py3-none-macosx_11_0_arm64.whl (2.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.8/2.8 MB 9.8 MB/s eta 0:00:00
+Downloading cryptography-41.0.2-cp37-abi3-macosx_10_12_universal2.whl (5.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 8.9 MB/s eta 0:00:00
+Building wheels for collected packages: pdfplumber
+  Building wheel for pdfplumber (setup.py) ... done
+  Created wheel for pdfplumber: filename=pdfplumber-0.10.0-py3-none-any.whl size=47309 sha256=fa2d9247d2556657b88307c27e6acc61a0f674bd67a79a415a0477b9e76c30f7
+  Stored in directory: /Users/tommy/Library/Caches/pip/wheels/1c/f2/38/9546afc3d4a3ab259b19635c47411c6509c9ae476fb5dd8498
+Successfully built pdfplumber
+Installing collected packages: pypdfium2, pycparser, Pillow, cffi, cryptography, pdfminer.six, pdfplumber
+Successfully installed Pillow-10.0.0 cffi-1.15.1 cryptography-41.0.2 pdfminer.six-20221105 pdfplumber-0.10.0 pycparser-2.21 pypdfium2-4.18.0
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_pdf.py 
+  File "extract_pdf.py", line 39
+SyntaxError: Non-ASCII character '\xe1' in file extract_pdf.py on line 39, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_pdf.py
+Traceback (most recent call last):
+  File "extract_pdf.py", line 4, in <module>
+    import pdfplumber
+ImportError: No module named pdfplumber
+tommy@RMIT-FREE-WIFI TaipyLLM % pip install pdfplumber
+Requirement already satisfied: pdfplumber in /opt/homebrew/lib/python3.11/site-packages (0.10.0)
+Requirement already satisfied: pdfminer.six==20221105 in /opt/homebrew/lib/python3.11/site-packages (from pdfplumber) (20221105)
+Requirement already satisfied: Pillow>=9.1 in /opt/homebrew/lib/python3.11/site-packages (from pdfplumber) (10.0.0)
+Requirement already satisfied: pypdfium2>=4.18.0 in /opt/homebrew/lib/python3.11/site-packages (from pdfplumber) (4.18.0)
+Requirement already satisfied: charset-normalizer>=2.0.0 in /opt/homebrew/lib/python3.11/site-packages (from pdfminer.six==20221105->pdfplumber) (3.2.0)
+Requirement already satisfied: cryptography>=36.0.0 in /opt/homebrew/lib/python3.11/site-packages (from pdfminer.six==20221105->pdfplumber) (41.0.2)
+Requirement already satisfied: cffi>=1.12 in /opt/homebrew/lib/python3.11/site-packages (from cryptography>=36.0.0->pdfminer.six==20221105->pdfplumber) (1.15.1)
+Requirement already satisfied: pycparser in /opt/homebrew/lib/python3.11/site-packages (from cffi>=1.12->cryptography>=36.0.0->pdfminer.six==20221105->pdfplumber) (2.21)
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 extract_pdf.py
+                                                File tenbanan thamphan  ... noidungvuan nhandinhtoaan quyetdinh
+0  pdf_files/QUYET_DINH_SO_132_ngay_0672023_sl_ch...                    ...                                    
+1  pdf_files/QUYET_DINH_SO_132_ngay_0672023_sl_ch...                    ...                                    
+2    pdf_files/QD_CNSTT_VU_LY_HUE_THIEN_dang (1).pdf                    ...                                    
+3     pdf_files/QD_so_382022HCGDT_Vu_Le_Thi_Thuy.pdf                    ...                                    
+4        pdf_files/QD_CNSTT_VU_LY_HUE_THIEN_dang.pdf                    ...                                    
+
+[5 rows x 10 columns]
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 extract_pdf.py
+                                                File tenbanan thamphan  ... noidungvuan nhandinhtoaan quyetdinh
+0  pdf_files/QUYET_DINH_SO_132_ngay_0672023_sl_ch...                    ...                                    
+1  pdf_files/QUYET_DINH_SO_132_ngay_0672023_sl_ch...                    ...                                    
+2    pdf_files/QD_CNSTT_VU_LY_HUE_THIEN_dang (1).pdf                    ...                                    
+3     pdf_files/QD_so_382022HCGDT_Vu_Le_Thi_Thuy.pdf                    ...                                    
+4        pdf_files/QD_CNSTT_VU_LY_HUE_THIEN_dang.pdf                    ...                                    
+
+[5 rows x 10 columns]
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_pdf.py 
+Traceback (most recent call last):
+  File "extract_pdf.py", line 4, in <module>
+    import pdfplumber
+ImportError: No module named pdfplumber
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 extract_pdf.py
+                                                File tenbanan thamphan  ... noidungvuan nhandinhtoaan quyetdinh
+0  pdf_files/QUYET_DINH_SO_132_ngay_0672023_sl_ch...                    ...                                    
+1  pdf_files/QUYET_DINH_SO_132_ngay_0672023_sl_ch...                    ...                                    
+2    pdf_files/QD_CNSTT_VU_LY_HUE_THIEN_dang (1).pdf                    ...                                    
+3     pdf_files/QD_so_382022HCGDT_Vu_Le_Thi_Thuy.pdf                    ...                                    
+4        pdf_files/QD_CNSTT_VU_LY_HUE_THIEN_dang.pdf                    ...                                    
+
+[5 rows x 10 columns]
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 getpara.py    
+  File "/Users/tommy/Downloads/taipy/TaipyLLM/getpara.py", line 34
+    extract_paragraphs_from_pdf("pdf_files"):
+                                            ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 getpara.py
+                                            Paragraph
+0      TÒA ÁN NHÂN DÂN  \nTHỊ XÃ GC \n TỈNH TIỀN G...
+1                               Số: 132/2023/QĐST-DS 
+2   CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM \nĐộc lập -...
+3                Thị xã GC, ngày 06 tháng 7 năm 2023 
+4   QUYẾT ĐỊNH  \nCÔNG NHẬN SỰ THỎA THUẬN CỦA CÁC ...
+5   Căn cứ vào Điều 212 và Điều 213 của Bộ luật tố...
+6   Đã hết thời hạn 07 ngày, kể từ ngày lập biên b...
+7   đương sự nào thay đổi ý kiến về sự thỏa thuận ...
+8   QUYẾT ĐỊNH: \n1.  Công nhận sự thỏa thuận của ...
+9   Nguyên đơn: Trần Thị S, sinh năm 1949;  \nĐịa ...
+10   \n \n \n \n \n
+                   2. Sự thỏa thuận của các đương...
+11  - Về án phí dân sự sơ thẩm:  \n+ Anh Lê Nguyễn...
+12                                      nghìn đồng). 
+13  3. Quyết định này có hiệu lực pháp luật ngay s...
+14  không bị kháng cáo, kháng nghị theo thủ tục ph...
+15  4. Quyết định này được thi hành theo quy định ...
+16  Nơi nhận: \n- Đương sự; \n- Viện kiểm sát nhân...
+17                                         THẨM PHÁN 
+18                                                ...
+19                         \n \n  \n \n  \n \n \n \n
+
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 getpara.py
+Text content saved to 'output_utf8.txt' in UTF-8 encoding.
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 getpara.py
+Text content saved to 'output.json' as JSON.
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 getpara.py
+Text content saved to 'output.json' as JSON.
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py 
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 11
+    print(f"Error: Unable to extract text from '{pdf_path}'. The PDF may be scanned or corrupted.")
+                                                                                                 ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 66
+SyntaxError: Non-ASCII character '\xe1' in file extract_sections.py on line 66, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+tommy@RMIT-FREE-WIFI TaipyLLM % python extract_sections.py
+  File "extract_sections.py", line 74
+    print(f"Text content from PDFs in '{input_folder}' saved to '{output_file}' as JSON with grouped sections.")
+                                                                                                              ^
+SyntaxError: invalid syntax
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 extract_sections.py
+Text content from PDFs in 'pdf_files/' saved to 'output.json' as JSON with grouped sections.
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 extract_sections.py
+Text content from PDFs in 'pdf_files/' saved to 'output.json' as JSON with grouped sections.
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 extract_sections.py
+Text content from PDFs in 'pdf_files/' saved to 'output.json' as JSON with grouped sections.
+tommy@RMIT-FREE-WIFI TaipyLLM % 
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 extract_sections.py
+Text content from PDFs in 'pdf_files/' saved to 'output.json' as JSON with grouped sections.
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 extract_sections.py
+['TÒA ÁN NHÂN DÂN  \nTHÀNH PHỐ HỒ CHÍ MINH ', 'CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM \nĐộc lập – Tự do – Hạnh phúc ', 'Bản án số:  532/2023/DSPT \nNgày: 28/4/2023 \nVề việc tranh chấp đòi nhà. ', 'NHÂN DANH \nNƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM \nTÒA ÁN NHÂN DÂN THÀNH PHỐ HỒ CHÍ MINH ', 'Với thành phần Hội đồng xét xử phúc thẩm gồm có: ', 'Thẩm phán – Chủ tọa phiên tòa: Bà Phạm Thị Thảo \nCác Thẩm phán:  ', '1. Bà Trần Thị Thủy \n2. Bà Nguyễn Thị Thanh Hiền ', 'Thư ký Tòa án ghi biên bản phiên tòa: Bà An Phương Trang – Thư ký Tòa án. \nĐại diện Viện kiểm sát nhân dân thành phố Hồ Chí Minh tham gia phiên tòa: ', 'Bà Nguyễn Thị Kim Tiển – Kiểm sát viên. ', 'Trong ngày 19/4/2023 và 28/4/2023, tại trụ sở Tòa án nhân dân Thành phố Hồ \nChí Minh xét xử phúc thẩm công khai vụ án dân sự thụ lý số 463/2022/TLPT-DS \nngày 18/11/2022 về việc “Tranh chấp đòi nhà”;  ', 'Do  bản  án  dân  sự  sơ  thẩm  số  322/2022/DS-ST  ngày  13/9/2022  của  Tòa  án ', 'nhân dân Quận 7, Thành phố Hồ Chí Minh bị kháng cáo.  ', 'Theo quyết định đưa vụ án ra xét xử số 1341/2022/QĐPT-DS ngày 29/3/2023, ', 'giữa các đương sự: ', 'Nguyên đơn:  ', '1. Bà Huỳnh Thị T, sinh năm 1957; \n2. Bà Trần Huỳnh Hải Y1, sinh năm 1983; \nĐịa chỉ: 381/32 đường T, Phường 11, quận BT, Thành phố Hồ Chí Minh. \nNgười đại diện theo ủy quyền của bà T và bà Y1:  \n- Bà Võ Thị Hồng Ng1, sinh năm 1998; \n- Ông Trần Nguyễn Quốc Th, sinh năm 2003 \nCùng địa chỉ: 213A NX, Phường 13, quận BT, Thành phố Hồ Chí Minh.  ', 'Theo các Giấy ủy quyền số 25530 quyển số 12/2022 TP/CC-SCC/HĐGD.MH \nngày  06/12/2022  và  số  quyển  số  12/2022  TP/CC-SCC/HĐGD.MH  ngày \n06/12/2022. ', 'Người bảo vệ quyền và lợi ích hợp pháp của nguyên đơn: Bà Hồ Ngọc Hiền \nTh1– Luật sư thuộc Văn phòng luật sư Triển Luật, Đoàn luật sư Thành phố Hồ Chí \nMinh. ', ' \n \n \n \n \n        \n \n \n \n \n \n \n \n \n \n\x0cBị đơn: Bà Trần Thị Bích Ng, sinh năm 1977; \nĐịa chỉ: 502/37/10 HTP, phường BT, Quận S, Thành phố Hồ Chí Minh. ', 'Người có quyền lợi và nghĩa vụ liên quan: ', '1. Ông Trần Văn Đ, sinh năm 1962; \nĐịa chỉ: 453/170/40 LVK, phường HT, Quận OT, Thành phố Hồ Chí Minh. ', '2. Ông Phạm Minh T2, sinh năm 1989;  \n3. Trẻ Phạm Ngọc H, sinh năm 2013; \n4. Trẻ Phạm Gia H1, sinh năm 2017; \nNgười đại diện theo pháp luật của các trẻ Phạm Ngọc H và Phạm Gia H1 là bà ', 'Trần Thị Bích Ng và ông Phạm Minh T2. ', 'Địa chỉ: 502/37/10 HTP, phường BT, Quận S, Thành phố Hồ Chí Minh. ', '5. Ông Đặng Văn T3, sinh năm 1956; \n6. Bà Nguyễn Thị Kim D, sinh năm 1987; \n7. Bà Trần Thị Hồng Nh, sinh năm 1992; \n8. Bà Phạm Thị Thùy V, sinh năm 1990; \n9. Bà Nguyễn Đinh Ngọc Y2, sinh năm 1978; \n10. Ông Tạ Anh K, sinh năm 2000; \nCùng địa chỉ: 502/37/10 HTP, phường BT, Quận S, Thành phố Hồ Chí Minh. ']
+Text content from PDFs in 'pdf_files/' saved to 'output.json' as JSON with grouped sections.
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 extract_sections.py
+Traceback (most recent call last):
+  File "/Users/tommy/Downloads/taipy/TaipyLLM/extract_sections.py", line 72, in <module>
+    process_pdfs_in_folder(input_folder, output_file, start_keyword, end_keyword)
+  File "/Users/tommy/Downloads/taipy/TaipyLLM/extract_sections.py", line 58, in process_pdfs_in_folder
+    sections = group_paragraphs_into_sections(pdf_text, start_keyword, end_keyword)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tommy/Downloads/taipy/TaipyLLM/extract_sections.py", line 36, in group_paragraphs_into_sections
+    print(current_sections)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'current_sections' is not defined. Did you mean: 'current_section'?
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 extract_sections.py
+['TÒA ÁN NHÂN DÂN  \nTHÀNH PHỐ HỒ CHÍ MINH \n\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM \nĐộc lập – Tự do – Hạnh phúc \n\nBản án số:  532/2023/DSPT \nNgày: 28/4/2023 \nVề việc tranh chấp đòi nhà. \n\nNHÂN DANH \nNƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM \nTÒA ÁN NHÂN DÂN THÀNH PHỐ HỒ CHÍ MINH \n\nVới thành phần Hội đồng xét xử phúc thẩm gồm có: \n\nThẩm phán – Chủ tọa phiên tòa: Bà Phạm Thị Thảo \nCác Thẩm phán:  \n\n1. Bà Trần Thị Thủy \n2. Bà Nguyễn Thị Thanh Hiền \n\nThư ký Tòa án ghi biên bản phiên tòa: Bà An Phương Trang – Thư ký Tòa án. \nĐại diện Viện kiểm sát nhân dân thành phố Hồ Chí Minh tham gia phiên tòa: \n\nBà Nguyễn Thị Kim Tiển – Kiểm sát viên. \n\nTrong ngày 19/4/2023 và 28/4/2023, tại trụ sở Tòa án nhân dân Thành phố Hồ \nChí Minh xét xử phúc thẩm công khai vụ án dân sự thụ lý số 463/2022/TLPT-DS \nngày 18/11/2022 về việc “Tranh chấp đòi nhà”;  \n\nDo  bản  án  dân  sự  sơ  thẩm  số  322/2022/DS-ST  ngày  13/9/2022  của  Tòa  án \n\nnhân dân Quận 7, Thành phố Hồ Chí Minh bị kháng cáo.  \n\nTheo quyết định đưa vụ án ra xét xử số 1341/2022/QĐPT-DS ngày 29/3/2023, \n\ngiữa các đương sự: \n\nNguyên đơn:  \n\n1. Bà Huỳnh Thị T, sinh năm 1957; \n2. Bà Trần Huỳnh Hải Y1, sinh năm 1983; \nĐịa chỉ: 381/32 đường T, Phường 11, quận BT, Thành phố Hồ Chí Minh. \nNgười đại diện theo ủy quyền của bà T và bà Y1:  \n- Bà Võ Thị Hồng Ng1, sinh năm 1998; \n- Ông Trần Nguyễn Quốc Th, sinh năm 2003 \nCùng địa chỉ: 213A NX, Phường 13, quận BT, Thành phố Hồ Chí Minh.  \n\nTheo các Giấy ủy quyền số 25530 quyển số 12/2022 TP/CC-SCC/HĐGD.MH \nngày  06/12/2022  và  số  quyển  số  12/2022  TP/CC-SCC/HĐGD.MH  ngày \n06/12/2022. \n\nNgười bảo vệ quyền và lợi ích hợp pháp của nguyên đơn: Bà Hồ Ngọc Hiền \nTh1– Luật sư thuộc Văn phòng luật sư Triển Luật, Đoàn luật sư Thành phố Hồ Chí \nMinh. \n\n \n \n \n \n \n        \n \n \n \n \n \n \n \n \n \n\x0cBị đơn: Bà Trần Thị Bích Ng, sinh năm 1977; \nĐịa chỉ: 502/37/10 HTP, phường BT, Quận S, Thành phố Hồ Chí Minh. \n\nNgười có quyền lợi và nghĩa vụ liên quan: \n\n1. Ông Trần Văn Đ, sinh năm 1962; \nĐịa chỉ: 453/170/40 LVK, phường HT, Quận OT, Thành phố Hồ Chí Minh. \n\n2. Ông Phạm Minh T2, sinh năm 1989;  \n3. Trẻ Phạm Ngọc H, sinh năm 2
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 gettextposition.py 
+ 
+
+Nguyên đơn trình bày: 
+
+Ông Trần Văn H2 và vợ là bà Huỳnh Thị T là chủ sở hữu nhà và đất thuộc 
+thửa  đất  số  21,  tờ  bản  đồ  52  tọa  lạc  tại    số  502/37/10  đường  HTP,  phường  BT, 
+Quận S, Thành phố Hồ Chí Minh theo Giấy chứng nhận quyền sử dụng đất, quyền 
+sở hữu nhà ở và tài sản khác gắn liền với đất số BA 048056, số vào sổ cấp GCN: 
+CH04654 cấp ngày 07/9/2010. 
+
+Ông  Trần  Văn  H2  chết  ngày  20/11/2020,  trước  khi  chết  ông  Trần  Văn  H2 
+không lập di chúc định đoạt đối với phần quyền tài sản của ông Trần Văn H2 đối 
+với nhà đất nêu trên. 
+
+Phần di sản của ông Trần Văn H2 để lại là 50% giá trị căn nhà và quyền sử 
+
+dụng đất nêu trên tương đương ½ giá trị của di sản. 
+
+Về hàng thừa kế thứ nhất của ông Trần Văn H2: 
+
+Cha  đẻ  của  ông  Trần  Văn H2  là  Trần Văn  L1,  sinh  năm  1933, ông  L1  chết 
+ngày 06/01/2012 tại Trung tâm bảo trợ xã hội Chánh Phú Hòa thuộc Sở Lao động - 
+thương binh và xã hội Thành phố Hồ Chí Minh; 
+
+2 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mẹ đẻ của ông Trần Văn H2 là bà Đỗ Thị H3, bà H3 chết ngày 07/02/2015; 
+
+Ông  Trần  Văn  H2  có  vợ  là  bà  Huỳnh  Thị  T;  Ông  H2  và  bà  T  có  01  (một) 
+
+người con đẻ là bà Trần Huỳnh Hải Y1, sinh năm 1983. 
+
+Ngoài ra, ông Trần Văn H2 không có con nuôi, con riêng và không có cha mẹ 
+
+nuôi. 
+
+Về nguồn gốc nhà đất: Nhà đất đang tranh chấp là do ông Trần Văn H2 và bà 
+Huỳnh Thị T nhận chuyển nhượng của bà Bùi Thúy Q vào tháng 10/2000, trong đó 
+phần đất có kích thước ngang 7m x dài 28m, trên đất có một căn nhà tạm mang số 
+28/19F, phường BT, Quận S, Thành phố Hồ Chí Minh được Ủy ban nhân dân Quận 
+7  cấp  Giấy  chứng  nhận  quyền  sử  dụng  đất  số  00658QSDĐ/463HĐ-H2000  ngày 
+27/11/2000. 
+
+Năm  2001,  ông  H2,  bà  T  xây  dựng  lại  căn  nhà  khác  thay  thế  căn  nhà  tạm 
+trước đây, căn nhà gồm 02 (Hai) phần trong đó một phần là 06 (Sáu) căn phòng trọ 
+nằm phía sau và phần còn lại là căn nhà cấp 4 nằm mặt tiền hẻm. Đối với 06 (Sáu) 
+căn phòng trọ thì cho thuê để lấy chi phí sinh hoạt, còn căn nhà cấp 4 thì cho bà Đỗ 
+Thị H4 – mẹ ruột ông H2 ở. 
+
+Năm  2010  nhà,  đất  nêu  trên  được  Ủy  ban  nhân  dân  Quận  7  cấp  đổi  Giấy 
+chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất 
+số BA 048056, số vào sổ cấp GCN: CH04654 cấp ngày 07 tháng 9 năm 2010 thuộc 
+thửa  đất  số  21,  tờ  bản  đồ  52  (phường  BT).  Số  nhà  cũng  được  cấp  đổi  thành  số 
+502/37/10 đường HTP, phường BT, Quận S, Thành phố Hồ Chí Minh.  
+
+Khoảng đầu năm 2015, bà Trần Thị Bích Ng tự ý chuyển về ở với bà Đỗ Thị 
+H4 trong căn nhà cấp 4 nhưng không hề thông báo cho ông H2 hay bà T biết, đến 
+tháng 02/2015 bà Đỗ Thị H4 chết nhưng bà Trần Thị Bích Ng vẫn tiếp tục ở trong 
+căn nhà trên mà không chịu trả lại nhà, đất cho vợ chồng ông H2, bà T. 
+
+Năm 2017, bà  Trần  Thị Bích Ng  tự  ý phá hủy 01  (Một)  căn phòng  trọ, xây 
+dựng lại căn nhà cấp 4 không có giấy phép và cũng không có được sự đồng ý của 
+chủ sở hữu là ông H2, bà T.  
+
+Khi  phát  hiện  ra  sự  việc  bà  Trần  Thị  Bích  Ng  tự  ý  phá  hủy  phòng  trọ,  xây 
+dựng  lại căn  nhà  thì  ông H2 bà  T  đã  yêu cầu  bà Ng phải  giao  trả  lại căn  nhà và 
+đồng thời yêu cầu bà Ng phải khôi phục lại hiện trạng ban đầu của căn nhà. Vì nghĩ 
+tình là em út trong nhà, mẹ mới mất nên ông H2 không muốn kiện tụng mà để cho 
+bà Ng tự suy nghĩ lại và tự nguyện trả lại nhà.  
+
+Tuy nhiên, sau đó bà Ng ngày càng có những hành động không thể chấp nhận 
+được và có ý định muốn chiếm đoạt luôn căn nhà nên  ông H2 đã yêu cầu bà Ng 
+phải giao trả lại ngay nhà, đất cùng toàn bộ giấy tờ nhà mà bà Ng đang chiếm giữ 
+nhưng bà Ng kiên quyết không trả, còn xúc phạm ông H2 và thách thức kiện ra tòa. 
+3 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Vì quá tức giận và đau buồn nên bệnh cũ lại tái phát và ông H2 đột ngột qua đời 
+vào tháng 11/2020 khi sự việc đang giải quyết. Hiện trạng căn nhà còn 05 (Năm) 
+căn phòng trọ nằm ở phía sau và căn nhà cấp 4 ở trước. 
+
+Thời điểm ông H2 còn sống, hàng tháng ông H2 vẫn thu số tiền thu được từ 
+việc cho thuê 05 căn phòng trọ nêu trên, còn đối với bà Ng ở căn nhà cấp 4 phía 
+trước thì bà Ng chưa thanh toán tiền thuê. Tuy nhiên, từ lúc ông H2 chết vào tháng 
+11/2020 đến nay bà Ng không những không thanh toán tiền thuê nhà cho bà Tmà 
+toàn bộ tiền thuê trọ của 05 (Năm) căn phòng trọ đều bị bà Ng chiếm giữ. Nghiêm 
+trọng hơn, khi ông H2 chết chưa bao lâu thì bất ngờ bà Ng qua nhà nguyên đơn tại 
+quận BT gây áp lực buộc nguyên đơn phải làm thủ tục sang tên sở hữu cho bà Ng 
+đối với phần đất và căn nhà cấp 4 phía trước.  
+
+Ngoài ra, vì trước đây toàn bộ giấy tờ bản chính của nhà, đất này ông H2 đã 
+gửi cho mẹ là bà Đỗ Thị H4 giữ giùm để đề phòng khi cơ quan có thẩm quyền kiểm 
+tra đột xuất, bà Đỗ Thị H4 có giấy tờ để đối chiếu nhưng sau khi bà H4 chết thì bà 
+Ng cũng chiếm giữ luôn. 
+
+Rất nhiều lần nguyên đơn yêu cầu bà Ng phải trả lại nhà, đất, giấy tờ nhà và 
+tiền thuê trọ mà bà Ng đang chiếm giữ trái phép. Tuy nhiên bà Ng đã dùng những 
+lời lẽ rất thậm tệ chửi bới, gây mất trật tự, không những vậy bà Ng còn thách thức 
+nguyên  đơn  đi  tố  cáo,  khiếu  kiện  bất  kể  nơi  đâu  bà  Ng  vẫn  có  thể  theo  hầu  và 
+không  sợ.  Điều  này  chứng  tỏ  rằng  bà  Trần  Thị Bích  Ng  đã  quá coi thường pháp 
+luật. 
+
+Hành vi chiếm giữ, sử dụng và khai thác một cách trái pháp luật nhà, đất tọa 
+lạc tại địa chỉ 502/37/10 (số cũ: 28/19F) đường HTP, phường BT, Quận S, Thành 
+phố Hồ Chí Minh của bà Trần Thị Bích Ng đã xâm hại nghiêm trọng đến quyền và 
+lợi ích hợp pháp  của gia đình nguyên đơn. Xuất phát từ hành vi này mà đến nay 
+nguyên đơn  chưa thể thực hiện được việc  khai  nhận phần  di sản thừa kế  mà  ông 
+Trần Văn H2 để lại.  
+
+Do  đó,  nguyên  đơn  đã  khởi  kiện  bà  Trần  Thị  Bích  Ng  tại  Tòa  án  nhân  dân 
+Quận 7, Thành phố Hồ Chí Minh đề nghị Tòa án nhân dân Quận 7, Thành phố Hồ 
+Chí Minh xem xét giải quyết những nội dung sau đây: 
+
+1. Yêu cầu Tòa án buộc bà Trần Thị Bích Ng phải trả lại cho nguyên đơn toàn 
+bộ nhà, đất tọa lạc tại số 502/37/10 (số cũ: 28/19F) đường HTP, phường BT, Quận 
+S,  Thành phố Hồ  Chí  Minh  theo Giấy  chứng  nhận  số  BA 048056, số  vào  sổ  cấp 
+GCN: CH04654 do Ủy  ban  nhân  dân  Quận  7  Thành  phố Hồ  Chí  Minh  cấp ngày 
+07/9/2010. 
+
+2. Yêu cầu Tòa án buộc bà Trần Thị Bích Ng phải trả cho nguyên đơn toàn bộ 
+bản chính Giấy chứng nhận số BA 048056, số vào sổ cấp GCN: CH04654 do Ủy 
+ban nhân dân Quận 7 cấp ngày 07/9/2010 và giấy tờ liên quan đến nhà, đất nêu trên 
+để nguyên đơn thực hiện các thủ tục khai nhận di sản do ông Trần Văn H2 để lại. 
+4 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Commented [l1]: Nguyễn Văn Đậu 
+
+Trường hợp  bà Ng không trả lại Giấy chứng nhận thì đề nghị Tòa án chấp thuận 
+cho nguyên đơn được liên hệ với cơ quan nhà nước có  thẩm quyền để xin cấp lại 
+Giấy chứng nhận. 
+
+Bị đơn bà Trần Thị Bích Ng trình bày:  
+
+Nguồn gốc căn nhà  đang tranh chấp đúng như nguyên đơn trình bày, nhưng 
+tiền để mua nhà là xuất phát từ việc bán căn nhà 177/20/19A Đ, Phường 11, quận 
+BT, Thành phố Hồ Chí Minh do nhà nước cấp cho hộ gia đình bà Đỗ Thị H4 (Đỗ 
+Thị H4, Trần Văn Đ, Trần Quốc T5, Trần Thị Bích Ng , Trần Văn H2) được 70 cây 
+5 chỉ vàng 9999, rồi sau đó bà Đỗ Thị H4 đưa tiền cho ông Trần Văn H2 mua căn 
+nhà  381/13  T,  Phường  11,  quận  BT,  Thành  phố  Hồ  Chí  Minh  giá  48  cây  vàng 
+9999. Năm 2000, ông Trần Văn H2 bán căn nhà số 381/13 đường Văn T, Phường 
+11, quận BT, Thành phố Hồ Chí Minh với giá 52 cây vàng 9999 để mua căn nhà 
+đang tranh chấp 502/37/10 HTP, phường BT, Quận S, Thành phố Hồ Chí Minh. 05 
+(Năm) căn nhà trọ do ông Đ, ông H2, bà Ng cùng bỏ tiền ra xây vào tháng 8/2017 
+hết 175.500.000 đồng. Căn nhà hiện tại do vợ chồng bà Ng tự bỏ ra xây. 
+
+Nay, với yêu cầu khởi kiện của nguyên đơn bà Ng có ý kiến nếu nguyên đơn 
+lấy lại nhà thì hoàn trả lại cho bà Trần Thị Bích Ng và ông Trần Văn Đ 50% giá trị 
+căn nhà là 7.500.000.000 đồng.  
+
+Người có quyền lợi, nghĩa vụ liên quan ông Trần Văn Đ trình bày:  
+Căn  nhà  số  177/20/19A  Đ,  Phường  11,  quận  BT,  Thành  phố  Hồ  Chí  Minh 
+được nhà nước cho hộ gia đình bà Đỗ Thị H4 (Đỗ Thị H4, Trần Văn Đ, Trần Quốc 
+T5, Trần Thị Bích Ng , Trần Văn H2) thuê năm 1981. Năm 1998 thì được mua hóa 
+giá và để cho ông Trần Văn H2 và bà Huỳnh Thị T đứng tên. Sau đó vợ chồng ông 
+H2  bán  căn  nhà  177/20/19A  Đ,  Phường  11,  quận  BT,  Thành  phố  Hồ  Chí  Minh 
+được 70  cây  5  chỉ vàng 9999,  rồi mua  căn  nhà  381/13    T,  Phường 11,  quận  BT, 
+Thành phố Hồ Chí Minh giá 48 cây vàng 9999. Năm 2000, ông Trần Văn H2 bán 
+căn nhà 381/13  T, Phường 11, quận BT, Thành phố Hồ Chí Minh với giá 52 cây 
+vàng 9999 để mua căn nhà đang tranh chấp 502/37/10 HTP, phường BT, Quận S, 
+Thành phố Hồ Chí Minh.  
+
+Nay,  với  yêu  cầu  khởi  kiện  của  nguyên  đơn  ông  Trần  Văn  Đ  có  ý  kiến  nếu 
+nguyên đơn lấy lại nhà thì hoàn trả lại cho bà Trần Thị Bích Ng và ông Trần Văn Đ 
+50% giá trị căn nhà là 7.500.000.000 đồng (Bảy tỷ năm trăm triệu đồng). 
+
+Người có quyền lợi, nghĩa vụ liên quan ông Phạm Minh T2 trình bày: 
+
+Ông  là  chồng  của bà Trần  Thị Bích Ng  , với  yêu  cầu  khởi  kiện của nguyên 
+đơn ông có ý kiến nếu nguyên đơn lấy lại nhà thì hoàn trả lại cho bà Trần Thị Bích 
+Ng  và  ông  Trần  Văn  Đ  50%  giá  trị  căn  nhà  là  7.500.000.000  đồng  (Bảy  tỷ  năm 
+trăm triệu đồng) và trả cho vợ chồng ông phần chi phí hai vợ chồng ông đã bỏ ra để 
+sửa chữa nhà là 1.800.000.000 đồng (Một tỷ tám trăm triệu đồng). 
+
+5 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Người có quyền lợi, nghĩa vụ liên quan các ông bà Đặng Văn T3; Nguyễn Thị 
+Kim D; Trần Thị Hồng Nh; Phạm Thị Thùy V; Nguyễn Đình Ngọc Yến trình bày: 
+Chỉ là người thuê trọ, đối với yêu cầu kiện của nguyên đơn không có ý kiến gì và 
+yêu cầu được giải quyết vắng mặt. 
+
+Tại  bản  án  dân  sự  sơ  thẩm  số  322/2022/DS-ST  ngày  13/9/2022  của  Tòa  án 
+
+nhân dân Quận 7, Thành phố Hồ Chí Minh đã tuyên xử: 
+
+1. Chấp nhận toàn bộ yêu cầu khởi kiện của yêu cầu của nguyên đơn. 
+
+1.1.  Buộc bà Trần Thị Bích Ng phải trả lại cho nguyên đơn (bà Huỳnh Thị T 
+và bà Trần Huỳnh Hải Y1) toàn bộ nhà, đất tọa lạc tại số 502/37/10 (số cũ: 28/19F) 
+HTP, phường BT, Quận S, Thành phố Hồ Chí Minh theo Giấy chứng nhận Quyền 
+sử dụng đất quyền sở hữu nhà ở và tài sản khác gắn liền với đất số BA 048056, số 
+vào sổ cấp GCN: CH04654 do Ủy ban nhân dân Quận 7 Thành phố Hồ Chí Minh 
+cấp ngày 07/9/2010. Ngay sau khi bản án có hiệu lực pháp luật. 
+
+1.2. Buộc bà Trần Thị Bích Ng phải trả cho nguyên đơn (bà Huỳnh Thị T và 
+bà  Trần  Huỳnh  Hải  Y1)  toàn  bộ  bản  chính  Giấy  chứng  nhận  Quyền  sử  dụng  đất 
+quyền sở hữu nhà ở và tài sản khác gắn liền với đất số BA 048056, số vào sổ cấp 
+GCN: CH04654 do Ủy ban nhân dân Quận 7 cấp ngày 07/9/2010. Trường hợp bà 
+Trần Thị Bích Ng  không trả thì nguyên đơn (bà  Huỳnh Thị T và bà Trần Huỳnh 
+Hải Y1) được quyền tự mình liên hệ với cơ quan nhà nước có thẩm quyền để xin 
+cấp lại quyền sử dụng đất quyền sở hữu nhà ở và tài sản khác gắn liền với đất tại số 
+502/37/10  (số  cũ:  28/19F)  HTP,  phường  BT,  Quận  S,  Thành  phố  Hồ  Chí  Minh. 
+Ngay sau khi bản án có hiệu lực pháp luật. 
+
+1.3.  Nguyên đơn bà Huỳnh Thị T và bà Trần Huỳnh Hải Y1 phải thanh toán 
+cho bà Trần Thị Bích Ng và ông Đỗ Thanh T1số tiền 201.496.200 đồng (Hai trăm lẻ 
+một  triệu  bốn  trăm  chín  mươi  sáu  nghìn  hai  trăm  đồng) ngay  sau  khi  bà  Trần  Thị 
+Bích  Ng  giao  trả  giấy  tờ  nhà  và  toàn  bộ  nhà,  đất  tọa  lạc  tại  số  502/37/10  (số  cũ: 
+28/19F) HTP, phường BT, Quận S, Thành phố Hồ Chí Minh. 
+
+2. Kể từ ngày bà Trần Thị Bích Ng và ông Đỗ Thanh T1 có đơn yêu cầu thi 
+hành án nếu chậm thực hiện nghĩa vụ thanh toán thì nguyên đơn phải chịu thêm tiền 
+lãi  của  số  tiền  chậm  trả  tương  ứng  với  thời  gian  chậm  trả.  Lãi  suất  phát  sinh  do 
+chậm trả tiền được xác định theo thỏa thuận của các bên nhưng không được vượt 
+quá mức lãi suất được quy định tại Khoản 1 Điều 468 của Bộ luật Dân sự 2015; nếu 
+không có thỏa thuận thì thực hiện theo quy định tại khoản 2 Điều 468 của Bộ luật 
+Dân sự 2015. 
+
+Ngoài ra, án sơ thẩm còn tuyên án phí và quyền kháng cáo theo luật định. 
+
+Ngày 20/9/2022, bị đơn bà Trần Thị Bích Ng và người có quyền lợi nghĩa vụ 
+liên quan ông Trần Văn Đ, ông Phạm Minh T2 có đơn kháng cáo toàn bộ bản án sơ 
+thẩm.  
+
+6 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Tại phiên tòa phúc thẩm, nguyên đơn bà Huỳnh Thị T và bà Trần Huỳnh Hải 
+Y1 có người đại diện theo ủy quyền là bà Võ Thị Hồng Ng1 vẫn giữ nguyên yêu 
+cầu  khởi  kiện,  bị  đơn  bà  Trần  Thị  Bích  Ng  và  người  có  quyền  lợi  nghĩa  vụ  liên 
+quan ông Trần Văn Đ, ông Phạm Minh T2 vẫn giữ nguyên yêu cầu kháng cáo, các 
+đương sự không thỏa thuận được với nhau về việc giải quyết vụ án.  
+
+Nguyên đơn bà Huỳnh Thị T và bà Trần Huỳnh Hải Y1 có người đại diện theo 
+ủy quyền là bà Võ Thị Hồng Ng1 yêu cầu Tòa án cấp phúc thẩm giữ nguyên bản án 
+sơ thẩm. 
+
+Bị  đơn bà  Trần Thị Bích  Ng  yêu  cầu  sửa  bản  án  sơ  thẩm với  lý  do nhà đất 
+đang  tranh  chấp  có  nguồn  gốc  là  do  bán  căn  nhà  số  177/20/19A  Đ,  Phường  11, 
+quận BT là nhà mua của Nhà nước mà bà cũng có phần trong đó. Do đó, bà yêu cầu 
+được nhận ¼ giá trị nhà đất đang tranh chấp nếu phía bà T muốn lấy nhà. 
+
+Người có quyền lợi nghĩa vụ liên quan ông Trần Văn Đ cũng yêu cầu được 
+
+nhận ¼ giá trị nhà đất đang tranh chấp nếu phía bà T muốn lấy nhà. 
+
+Người có quyền lợi nghĩa vụ liên quan ông Phạm Minh T2 đề nghị trả lại cho 
+
+ông số tiền 1.800.000.000 đồng mà ông đã bỏ ra xây dựng, sửa chữa. 
+
+Ý kiến của đại diện Viện kiểm sát nhân dân thành phố Hồ Chí Minh: 
+
+- Về thủ tục tố tụng: Hội đồng xét xử, những người tham gia tố tụng đã thực 
+hiện đúng các quy định của pháp luật trong quá trình giải quyết vụ án tại giai đoạn 
+phúc thẩm. 
+
+- Về nội dung: Với các tài liệu, chứng cứ có trong hồ sơ và lời trình bày của 
+đương sự tại phiên tòa thấy rằng: nhà đất tại số 502/37/10 HTP, phường BT, Quận S, 
+Thành phố Hồ Chí Minh có nguồn gốc là số tiền có được từ việc các thành viên hộ gia 
+đình bán căn nhà 177/20/19A Đ, Phường 11, quận BT. Nên căn nhà 502/37/10 HTP, 
+phường BT, Quận S, Thành phố Hồ Chí Minh thuộc tài sản chung của gia đình ông 
+H2. 
+
+Căn cứ theo Hợp đồng thuê nhà số 433, ngày 02/6/1994 và phụ lục đính kèm 
+thì tại thời điểm ký hợp đồng thuê nhà thì hộ gia đình được thuê gồm 07 thành viên 
+là ông Trần Văn H2 – chủ hợp đồng, bà Đỗ Thị H4, Trần Thị Bích Ng, Nguyễn Thị 
+Ánh T6, Trần Văn Đ, Trần Thị Yến L, Trần Thị Băng T4. Căn cứ bản cam kết và 
+xác nhận ngày 23/9/1997 thì tại thời điểm cấp giấy chứng nhận thì ngoài ông H2 
+căn nhà trên còn có 05 thành viên bà H4, ông Đ, ông T5, bà Ng, bà  T6 đăng ký 
+thường  trú và  những người  này  cam kết  cho  ông  H2,  bà  Tđại  diện  đứng  tên  trên 
+giấy  chứng  nhận  và  ông  H2,  bà  Tđã  được  Ủy  ban  nhân  dân  quận  BT  cấp  giấy 
+chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở số hồ sơ gốc 2265/98 ngày 
+23/01/1998.        
+
+7 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Do  đó  việc  giải  quyết  tranh  chấp  căn  nhà  số  502/37/10  HTP,  phường  BT, 
+Quận S, Thành phố Hồ Chí Minh có liên quan đến quyền và lợi ích hợp pháp của 
+các  thành  viên  trong  hộ  gia  đình  ông  H2.  Nên  cần  thiết  đưa  bà  Trần  Thị  Yến  L, 
+Trần  Thị Băng T4  là những người  có  tên  trong hộ  trên hợp đồng  thuê nhà và bà 
+Nguyễn  Thị Ánh  T6 là  người  có  tên  trong  hộ  trên  hợp  đồng  thuê  nhà và  tại  thời 
+điểm cấp giấy chứng nhận vào tham gia tố tụng với tư cách là người có quyền lợi 
+nghĩa vụ liên quan để làm rõ. 
+
+Đồng thời tại cấp sơ thẩm bị đơn bà Trần Thị Bích Ng và người có quyền lợi 
+nghĩa vụ liên quan ông Trần Văn Đ đều trình bày căn nhà trên là tài sản chung của 
+hộ gia đình trong đó bà Ng và ông Đ là thành viên và có yêu cầu nguyên đơn hoàn 
+trả lại cho bà Ng ông Đ 50% giá trị nhà đất thuộc sở hữu của bà Ng, ông Đ. Người 
+có quyền lợi nghĩa vụ liên quan Phạm Minh T2 yêu cầu nếu nguyên đơn lấy lại nhà 
+thì hoàn trả cho vợ chồng ông chi phí bỏ ra sửa chữa nhà là 1.800.000.000 đồng. 
+Tại  phiên  tòa  phúc  thẩm  có  mặt  bà  Nguyễn  Thị  Ánh  T6  và  bà    T6  có  yêu  cầu 
+trường hợp bà Tlấy nhà thì phải bồi thường cho vợ chồng bà và ông Đ ¼ giá trị căn 
+nhà. Như phân tích trên có cơ sở xác định căn nhà tranh chấp là tài sản chung của 
+hộ gia đình ông H2, bị đơn và người có quyền lợi nghĩa vụ liên quan có yêu cầu 
+chia  tài  sản  chung  và  đòi  chi  phí  sửa  chữa  nhà  nhưng  Tòa  án  sơ  thẩm  chưa  giải 
+thích để bị đơn và người có quyền lợi nghĩa vụ liên quan làm đơn phản tố và đơn 
+yêu cầu độc lập để thụ lý và xem xét giải quyết tại cấp sơ thẩm.  
+
+tommy@RMIT-FREE-WIFI TaipyLLM % python3 gettextposition.py
+ 
+
+Nguyên đơn trình bày: 
+
+Ông Trần Văn H2 và vợ là bà Huỳnh Thị T là chủ sở hữu nhà và đất thuộc 
+thửa  đất  số  21,  tờ  bản  đồ  52  tọa  lạc  tại    số  502/37/10  đường  HTP,  phường  BT, 
+Quận S, Thành phố Hồ Chí Minh theo Giấy chứng nhận quyền sử dụng đất, quyền 
+sở hữu nhà ở và tài sản khác gắn liền với đất số BA 048056, số vào sổ cấp GCN: 
+CH04654 cấp ngày 07/9/2010. 
+
+Ông  Trần  Văn  H2  chết  ngày  20/11/2020,  trước  khi  chết  ông  Trần  Văn  H2 
+không lập di chúc định đoạt đối với phần quyền tài sản của ông Trần Văn H2 đối 
+với nhà đất nêu trên. 
+
+Phần di sản của ông Trần Văn H2 để lại là 50% giá trị căn nhà và quyền sử 
+
+dụng đất nêu trên tương đương ½ giá trị của di sản. 
+
+Về hàng thừa kế thứ nhất của ông Trần Văn H2: 
+
+Cha  đẻ  của  ông  Trần  Văn H2  là  Trần Văn  L1,  sinh  năm  1933, ông  L1  chết 
+ngày 06/01/2012 tại Trung tâm bảo trợ xã hội Chánh Phú Hòa thuộc Sở Lao động - 
+thương binh và xã hội Thành phố Hồ Chí Minh; 
+
+2 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Mẹ đẻ của ông Trần Văn H2 là bà Đỗ Thị H3, bà H3 chết ngày 07/02/2015; 
+
+Ông  Trần  Văn  H2  có  vợ  là  bà  Huỳnh  Thị  T;  Ông  H2  và  bà  T  có  01  (một) 
+
+người con đẻ là bà Trần Huỳnh Hải Y1, sinh năm 1983. 
+
+Ngoài ra, ông Trần Văn H2 không có con nuôi, con riêng và không có cha mẹ 
+
+nuôi. 
+
+Về nguồn gốc nhà đất: Nhà đất đang tranh chấp là do ông Trần Văn H2 và bà 
+Huỳnh Thị T nhận chuyển nhượng của bà Bùi Thúy Q vào tháng 10/2000, trong đó 
+phần đất có kích thước ngang 7m x dài 28m, trên đất có một căn nhà tạm mang số 
+28/19F, phường BT, Quận S, Thành phố Hồ Chí Minh được Ủy ban nhân dân Quận 
+7  cấp  Giấy  chứng  nhận  quyền  sử  dụng  đất  số  00658QSDĐ/463HĐ-H2000  ngày 
+27/11/2000. 
+
+Năm  2001,  ông  H2,  bà  T  xây  dựng  lại  căn  nhà  khác  thay  thế  căn  nhà  tạm 
+trước đây, căn nhà gồm 02 (Hai) phần trong đó một phần là 06 (Sáu) căn phòng trọ 
+nằm phía sau và phần còn lại là căn nhà cấp 4 nằm mặt tiền hẻm. Đối với 06 (Sáu) 
+căn phòng trọ thì cho thuê để lấy chi phí sinh hoạt, còn căn nhà cấp 4 thì cho bà Đỗ 
+Thị H4 – mẹ ruột ông H2 ở. 
+
+Năm  2010  nhà,  đất  nêu  trên  được  Ủy  ban  nhân  dân  Quận  7  cấp  đổi  Giấy 
+chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất 
+số BA 048056, số vào sổ cấp GCN: CH04654 cấp ngày 07 tháng 9 năm 2010 thuộc 
+thửa  đất  số  21,  tờ  bản  đồ  52  (phường  BT).  Số  nhà  cũng  được  cấp  đổi  thành  số 
+502/37/10 đường HTP, phường BT, Quận S, Thành phố Hồ Chí Minh.  
+
+Khoảng đầu năm 2015, bà Trần Thị Bích Ng tự ý chuyển về ở với bà Đỗ Thị 
+H4 trong căn nhà cấp 4 nhưng không hề thông báo cho ông H2 hay bà T biết, đến 
+tháng 02/2015 bà Đỗ Thị H4 chết nhưng bà Trần Thị Bích Ng vẫn tiếp tục ở trong 
+căn nhà trên mà không chịu trả lại nhà, đất cho vợ chồng ông H2, bà T. 
+
+Năm 2017, bà  Trần  Thị Bích Ng  tự  ý phá hủy 01  (Một)  căn phòng  trọ, xây 
+dựng lại căn nhà cấp 4 không có giấy phép và cũng không có được sự đồng ý của 
+chủ sở hữu là ông H2, bà T.  
+
+Khi  phát  hiện  ra  sự  việc  bà  Trần  Thị  Bích  Ng  tự  ý  phá  hủy  phòng  trọ,  xây 
+dựng  lại căn  nhà  thì  ông H2 bà  T  đã  yêu cầu  bà Ng phải  giao  trả  lại căn  nhà và 
+đồng thời yêu cầu bà Ng phải khôi phục lại hiện trạng ban đầu của căn nhà. Vì nghĩ 
+tình là em út trong nhà, mẹ mới mất nên ông H2 không muốn kiện tụng mà để cho 
+bà Ng tự suy nghĩ lại và tự nguyện trả lại nhà.  
+
+Tuy nhiên, sau đó bà Ng ngày càng có những hành động không thể chấp nhận 
+được và có ý định muốn chiếm đoạt luôn căn nhà nên  ông H2 đã yêu cầu bà Ng 
+phải giao trả lại ngay nhà, đất cùng toàn bộ giấy tờ nhà mà bà Ng đang chiếm giữ 
+nhưng bà Ng kiên quyết không trả, còn xúc phạm ông H2 và thách thức kiện ra tòa. 
+3 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Vì quá tức giận và đau buồn nên bệnh cũ lại tái phát và ông H2 đột ngột qua đời 
+vào tháng 11/2020 khi sự việc đang giải quyết. Hiện trạng căn nhà còn 05 (Năm) 
+căn phòng trọ nằm ở phía sau và căn nhà cấp 4 ở trước. 
+
+Thời điểm ông H2 còn sống, hàng tháng ông H2 vẫn thu số tiền thu được từ 
+việc cho thuê 05 căn phòng trọ nêu trên, còn đối với bà Ng ở căn nhà cấp 4 phía 
+trước thì bà Ng chưa thanh toán tiền thuê. Tuy nhiên, từ lúc ông H2 chết vào tháng 
+11/2020 đến nay bà Ng không những không thanh toán tiền thuê nhà cho bà Tmà 
+toàn bộ tiền thuê trọ của 05 (Năm) căn phòng trọ đều bị bà Ng chiếm giữ. Nghiêm 
+trọng hơn, khi ông H2 chết chưa bao lâu thì bất ngờ bà Ng qua nhà nguyên đơn tại 
+quận BT gây áp lực buộc nguyên đơn phải làm thủ tục sang tên sở hữu cho bà Ng 
+đối với phần đất và căn nhà cấp 4 phía trước.  
+
+Ngoài ra, vì trước đây toàn bộ giấy tờ bản chính của nhà, đất này ông H2 đã 
+gửi cho mẹ là bà Đỗ Thị H4 giữ giùm để đề phòng khi cơ quan có thẩm quyền kiểm 
+tra đột xuất, bà Đỗ Thị H4 có giấy tờ để đối chiếu nhưng sau khi bà H4 chết thì bà 
+Ng cũng chiếm giữ luôn. 
+
+Rất nhiều lần nguyên đơn yêu cầu bà Ng phải trả lại nhà, đất, giấy tờ nhà và 
+tiền thuê trọ mà bà Ng đang chiếm giữ trái phép. Tuy nhiên bà Ng đã dùng những 
+lời lẽ rất thậm tệ chửi bới, gây mất trật tự, không những vậy bà Ng còn thách thức 
+nguyên  đơn  đi  tố  cáo,  khiếu  kiện  bất  kể  nơi  đâu  bà  Ng  vẫn  có  thể  theo  hầu  và 
+không  sợ.  Điều  này  chứng  tỏ  rằng  bà  Trần  Thị Bích  Ng  đã  quá coi thường pháp 
+luật. 
+
+Hành vi chiếm giữ, sử dụng và khai thác một cách trái pháp luật nhà, đất tọa 
+lạc tại địa chỉ 502/37/10 (số cũ: 28/19F) đường HTP, phường BT, Quận S, Thành 
+phố Hồ Chí Minh của bà Trần Thị Bích Ng đã xâm hại nghiêm trọng đến quyền và 
+lợi ích hợp pháp  của gia đình nguyên đơn. Xuất phát từ hành vi này mà đến nay 
+nguyên đơn  chưa thể thực hiện được việc  khai  nhận phần  di sản thừa kế  mà  ông 
+Trần Văn H2 để lại.  
+
+Do  đó,  nguyên  đơn  đã  khởi  kiện  bà  Trần  Thị  Bích  Ng  tại  Tòa  án  nhân  dân 
+Quận 7, Thành phố Hồ Chí Minh đề nghị Tòa án nhân dân Quận 7, Thành phố Hồ 
+Chí Minh xem xét giải quyết những nội dung sau đây: 
+
+1. Yêu cầu Tòa án buộc bà Trần Thị Bích Ng phải trả lại cho nguyên đơn toàn 
+bộ nhà, đất tọa lạc tại số 502/37/10 (số cũ: 28/19F) đường HTP, phường BT, Quận 
+S,  Thành phố Hồ  Chí  Minh  theo Giấy  chứng  nhận  số  BA 048056, số  vào  sổ  cấp 
+GCN: CH04654 do Ủy  ban  nhân  dân  Quận  7  Thành  phố Hồ  Chí  Minh  cấp ngày 
+07/9/2010. 
+
+2. Yêu cầu Tòa án buộc bà Trần Thị Bích Ng phải trả cho nguyên đơn toàn bộ 
+bản chính Giấy chứng nhận số BA 048056, số vào sổ cấp GCN: CH04654 do Ủy 
+ban nhân dân Quận 7 cấp ngày 07/9/2010 và giấy tờ liên quan đến nhà, đất nêu trên 
+để nguyên đơn thực hiện các thủ tục khai nhận di sản do ông Trần Văn H2 để lại. 
+4 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Commented [l1]: Nguyễn Văn Đậu 
+
+Trường hợp  bà Ng không trả lại Giấy chứng nhận thì đề nghị Tòa án chấp thuận 
+cho nguyên đơn được liên hệ với cơ quan nhà nước có  thẩm quyền để xin cấp lại 
+Giấy chứng nhận. 
+
+Bị đơn bà Trần Thị Bích Ng trình bày:  
+
+Nguồn gốc căn nhà  đang tranh chấp đúng như nguyên đơn trình bày, nhưng 
+tiền để mua nhà là xuất phát từ việc bán căn nhà 177/20/19A Đ, Phường 11, quận 
+BT, Thành phố Hồ Chí Minh do nhà nước cấp cho hộ gia đình bà Đỗ Thị H4 (Đỗ 
+Thị H4, Trần Văn Đ, Trần Quốc T5, Trần Thị Bích Ng , Trần Văn H2) được 70 cây 
+5 chỉ vàng 9999, rồi sau đó bà Đỗ Thị H4 đưa tiền cho ông Trần Văn H2 mua căn 
+nhà  381/13  T,  Phường  11,  quận  BT,  Thành  phố  Hồ  Chí  Minh  giá  48  cây  vàng 
+9999. Năm 2000, ông Trần Văn H2 bán căn nhà số 381/13 đường Văn T, Phường 
+11, quận BT, Thành phố Hồ Chí Minh với giá 52 cây vàng 9999 để mua căn nhà 
+đang tranh chấp 502/37/10 HTP, phường BT, Quận S, Thành phố Hồ Chí Minh. 05 
+(Năm) căn nhà trọ do ông Đ, ông H2, bà Ng cùng bỏ tiền ra xây vào tháng 8/2017 
+hết 175.500.000 đồng. Căn nhà hiện tại do vợ chồng bà Ng tự bỏ ra xây. 
+
+Nay, với yêu cầu khởi kiện của nguyên đơn bà Ng có ý kiến nếu nguyên đơn 
+lấy lại nhà thì hoàn trả lại cho bà Trần Thị Bích Ng và ông Trần Văn Đ 50% giá trị 
+căn nhà là 7.500.000.000 đồng.  
+
+Người có quyền lợi, nghĩa vụ liên quan ông Trần Văn Đ trình bày:  
+Căn  nhà  số  177/20/19A  Đ,  Phường  11,  quận  BT,  Thành  phố  Hồ  Chí  Minh 
+được nhà nước cho hộ gia đình bà Đỗ Thị H4 (Đỗ Thị H4, Trần Văn Đ, Trần Quốc 
+T5, Trần Thị Bích Ng , Trần Văn H2) thuê năm 1981. Năm 1998 thì được mua hóa 
+giá và để cho ông Trần Văn H2 và bà Huỳnh Thị T đứng tên. Sau đó vợ chồng ông 
+H2  bán  căn  nhà  177/20/19A  Đ,  Phường  11,  quận  BT,  Thành  phố  Hồ  Chí  Minh 
+được 70  cây  5  chỉ vàng 9999,  rồi mua  căn  nhà  381/13    T,  Phường 11,  quận  BT, 
+Thành phố Hồ Chí Minh giá 48 cây vàng 9999. Năm 2000, ông Trần Văn H2 bán 
+căn nhà 381/13  T, Phường 11, quận BT, Thành phố Hồ Chí Minh với giá 52 cây 
+vàng 9999 để mua căn nhà đang tranh chấp 502/37/10 HTP, phường BT, Quận S, 
+Thành phố Hồ Chí Minh.  
+
+Nay,  với  yêu  cầu  khởi  kiện  của  nguyên  đơn  ông  Trần  Văn  Đ  có  ý  kiến  nếu 
+nguyên đơn lấy lại nhà thì hoàn trả lại cho bà Trần Thị Bích Ng và ông Trần Văn Đ 
+50% giá trị căn nhà là 7.500.000.000 đồng (Bảy tỷ năm trăm triệu đồng). 
+
+Người có quyền lợi, nghĩa vụ liên quan ông Phạm Minh T2 trình bày: 
+
+Ông  là  chồng  của bà Trần  Thị Bích Ng  , với  yêu  cầu  khởi  kiện của nguyên 
+đơn ông có ý kiến nếu nguyên đơn lấy lại nhà thì hoàn trả lại cho bà Trần Thị Bích 
+Ng  và  ông  Trần  Văn  Đ  50%  giá  trị  căn  nhà  là  7.500.000.000  đồng  (Bảy  tỷ  năm 
+trăm triệu đồng) và trả cho vợ chồng ông phần chi phí hai vợ chồng ông đã bỏ ra để 
+sửa chữa nhà là 1.800.000.000 đồng (Một tỷ tám trăm triệu đồng). 
+
+5 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Người có quyền lợi, nghĩa vụ liên quan các ông bà Đặng Văn T3; Nguyễn Thị 
+Kim D; Trần Thị Hồng Nh; Phạm Thị Thùy V; Nguyễn Đình Ngọc Yến trình bày: 
+Chỉ là người thuê trọ, đối với yêu cầu kiện của nguyên đơn không có ý kiến gì và 
+yêu cầu được giải quyết vắng mặt. 
+
+Tại  bản  án  dân  sự  sơ  thẩm  số  322/2022/DS-ST  ngày  13/9/2022  của  Tòa  án 
+
+nhân dân Quận 7, Thành phố Hồ Chí Minh đã tuyên xử: 
+
+1. Chấp nhận toàn bộ yêu cầu khởi kiện của yêu cầu của nguyên đơn. 
+
+1.1.  Buộc bà Trần Thị Bích Ng phải trả lại cho nguyên đơn (bà Huỳnh Thị T 
+và bà Trần Huỳnh Hải Y1) toàn bộ nhà, đất tọa lạc tại số 502/37/10 (số cũ: 28/19F) 
+HTP, phường BT, Quận S, Thành phố Hồ Chí Minh theo Giấy chứng nhận Quyền 
+sử dụng đất quyền sở hữu nhà ở và tài sản khác gắn liền với đất số BA 048056, số 
+vào sổ cấp GCN: CH04654 do Ủy ban nhân dân Quận 7 Thành phố Hồ Chí Minh 
+cấp ngày 07/9/2010. Ngay sau khi bản án có hiệu lực pháp luật. 
+
+1.2. Buộc bà Trần Thị Bích Ng phải trả cho nguyên đơn (bà Huỳnh Thị T và 
+bà  Trần  Huỳnh  Hải  Y1)  toàn  bộ  bản  chính  Giấy  chứng  nhận  Quyền  sử  dụng  đất 
+quyền sở hữu nhà ở và tài sản khác gắn liền với đất số BA 048056, số vào sổ cấp 
+GCN: CH04654 do Ủy ban nhân dân Quận 7 cấp ngày 07/9/2010. Trường hợp bà 
+Trần Thị Bích Ng  không trả thì nguyên đơn (bà  Huỳnh Thị T và bà Trần Huỳnh 
+Hải Y1) được quyền tự mình liên hệ với cơ quan nhà nước có thẩm quyền để xin 
+cấp lại quyền sử dụng đất quyền sở hữu nhà ở và tài sản khác gắn liền với đất tại số 
+502/37/10  (số  cũ:  28/19F)  HTP,  phường  BT,  Quận  S,  Thành  phố  Hồ  Chí  Minh. 
+Ngay sau khi bản án có hiệu lực pháp luật. 
+
+1.3.  Nguyên đơn bà Huỳnh Thị T và bà Trần Huỳnh Hải Y1 phải thanh toán 
+cho bà Trần Thị Bích Ng và ông Đỗ Thanh T1số tiền 201.496.200 đồng (Hai trăm lẻ 
+một  triệu  bốn  trăm  chín  mươi  sáu  nghìn  hai  trăm  đồng) ngay  sau  khi  bà  Trần  Thị 
+Bích  Ng  giao  trả  giấy  tờ  nhà  và  toàn  bộ  nhà,  đất  tọa  lạc  tại  số  502/37/10  (số  cũ: 
+28/19F) HTP, phường BT, Quận S, Thành phố Hồ Chí Minh. 
+
+2. Kể từ ngày bà Trần Thị Bích Ng và ông Đỗ Thanh T1 có đơn yêu cầu thi 
+hành án nếu chậm thực hiện nghĩa vụ thanh toán thì nguyên đơn phải chịu thêm tiền 
+lãi  của  số  tiền  chậm  trả  tương  ứng  với  thời  gian  chậm  trả.  Lãi  suất  phát  sinh  do 
+chậm trả tiền được xác định theo thỏa thuận của các bên nhưng không được vượt 
+quá mức lãi suất được quy định tại Khoản 1 Điều 468 của Bộ luật Dân sự 2015; nếu 
+không có thỏa thuận thì thực hiện theo quy định tại khoản 2 Điều 468 của Bộ luật 
+Dân sự 2015. 
+
+Ngoài ra, án sơ thẩm còn tuyên án phí và quyền kháng cáo theo luật định. 
+
+Ngày 20/9/2022, bị đơn bà Trần Thị Bích Ng và người có quyền lợi nghĩa vụ 
+liên quan ông Trần Văn Đ, ông Phạm Minh T2 có đơn kháng cáo toàn bộ bản án sơ 
+thẩm.  
+
+6 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Tại phiên tòa phúc thẩm, nguyên đơn bà Huỳnh Thị T và bà Trần Huỳnh Hải 
+Y1 có người đại diện theo ủy quyền là bà Võ Thị Hồng Ng1 vẫn giữ nguyên yêu 
+cầu  khởi  kiện,  bị  đơn  bà  Trần  Thị  Bích  Ng  và  người  có  quyền  lợi  nghĩa  vụ  liên 
+quan ông Trần Văn Đ, ông Phạm Minh T2 vẫn giữ nguyên yêu cầu kháng cáo, các 
+đương sự không thỏa thuận được với nhau về việc giải quyết vụ án.  
+
+Nguyên đơn bà Huỳnh Thị T và bà Trần Huỳnh Hải Y1 có người đại diện theo 
+ủy quyền là bà Võ Thị Hồng Ng1 yêu cầu Tòa án cấp phúc thẩm giữ nguyên bản án 
+sơ thẩm. 
+
+Bị  đơn bà  Trần Thị Bích  Ng  yêu  cầu  sửa  bản  án  sơ  thẩm với  lý  do nhà đất 
+đang  tranh  chấp  có  nguồn  gốc  là  do  bán  căn  nhà  số  177/20/19A  Đ,  Phường  11, 
+quận BT là nhà mua của Nhà nước mà bà cũng có phần trong đó. Do đó, bà yêu cầu 
+được nhận ¼ giá trị nhà đất đang tranh chấp nếu phía bà T muốn lấy nhà. 
+
+Người có quyền lợi nghĩa vụ liên quan ông Trần Văn Đ cũng yêu cầu được 
+
+nhận ¼ giá trị nhà đất đang tranh chấp nếu phía bà T muốn lấy nhà. 
+
+Người có quyền lợi nghĩa vụ liên quan ông Phạm Minh T2 đề nghị trả lại cho 
+
+ông số tiền 1.800.000.000 đồng mà ông đã bỏ ra xây dựng, sửa chữa. 
+
+Ý kiến của đại diện Viện kiểm sát nhân dân thành phố Hồ Chí Minh: 
+
+- Về thủ tục tố tụng: Hội đồng xét xử, những người tham gia tố tụng đã thực 
+hiện đúng các quy định của pháp luật trong quá trình giải quyết vụ án tại giai đoạn 
+phúc thẩm. 
+
+- Về nội dung: Với các tài liệu, chứng cứ có trong hồ sơ và lời trình bày của 
+đương sự tại phiên tòa thấy rằng: nhà đất tại số 502/37/10 HTP, phường BT, Quận S, 
+Thành phố Hồ Chí Minh có nguồn gốc là số tiền có được từ việc các thành viên hộ gia 
+đình bán căn nhà 177/20/19A Đ, Phường 11, quận BT. Nên căn nhà 502/37/10 HTP, 
+phường BT, Quận S, Thành phố Hồ Chí Minh thuộc tài sản chung của gia đình ông 
+H2. 
+
+Căn cứ theo Hợp đồng thuê nhà số 433, ngày 02/6/1994 và phụ lục đính kèm 
+thì tại thời điểm ký hợp đồng thuê nhà thì hộ gia đình được thuê gồm 07 thành viên 
+là ông Trần Văn H2 – chủ hợp đồng, bà Đỗ Thị H4, Trần Thị Bích Ng, Nguyễn Thị 
+Ánh T6, Trần Văn Đ, Trần Thị Yến L, Trần Thị Băng T4. Căn cứ bản cam kết và 
+xác nhận ngày 23/9/1997 thì tại thời điểm cấp giấy chứng nhận thì ngoài ông H2 
+căn nhà trên còn có 05 thành viên bà H4, ông Đ, ông T5, bà Ng, bà  T6 đăng ký 
+thường  trú và  những người  này  cam kết  cho  ông  H2,  bà  Tđại  diện  đứng  tên  trên 
+giấy  chứng  nhận  và  ông  H2,  bà  Tđã  được  Ủy  ban  nhân  dân  quận  BT  cấp  giấy 
+chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở số hồ sơ gốc 2265/98 ngày 
+23/01/1998.        
+
+7 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Do  đó  việc  giải  quyết  tranh  chấp  căn  nhà  số  502/37/10  HTP,  phường  BT, 
+Quận S, Thành phố Hồ Chí Minh có liên quan đến quyền và lợi ích hợp pháp của 
+các  thành  viên  trong  hộ  gia  đình  ông  H2.  Nên  cần  thiết  đưa  bà  Trần  Thị  Yến  L, 
+Trần  Thị Băng T4  là những người  có  tên  trong hộ  trên hợp đồng  thuê nhà và bà 
+Nguyễn  Thị Ánh  T6 là  người  có  tên  trong  hộ  trên  hợp  đồng  thuê  nhà và  tại  thời 
+điểm cấp giấy chứng nhận vào tham gia tố tụng với tư cách là người có quyền lợi 
+nghĩa vụ liên quan để làm rõ. 
+
+Đồng thời tại cấp sơ thẩm bị đơn bà Trần Thị Bích Ng và người có quyền lợi 
+nghĩa vụ liên quan ông Trần Văn Đ đều trình bày căn nhà trên là tài sản chung của 
+hộ gia đình trong đó bà Ng và ông Đ là thành viên và có yêu cầu nguyên đơn hoàn 
+trả lại cho bà Ng ông Đ 50% giá trị nhà đất thuộc sở hữu của bà Ng, ông Đ. Người 
+có quyền lợi nghĩa vụ liên quan Phạm Minh T2 yêu cầu nếu nguyên đơn lấy lại nhà 
+thì hoàn trả cho vợ chồng ông chi phí bỏ ra sửa chữa nhà là 1.800.000.000 đồng. 
+Tại  phiên  tòa  phúc  thẩm  có  mặt  bà  Nguyễn  Thị  Ánh  T6  và  bà    T6  có  yêu  cầu 
+trường hợp bà Tlấy nhà thì phải bồi thường cho vợ chồng bà và ông Đ ¼ giá trị căn 
+nhà. Như phân tích trên có cơ sở xác định căn nhà tranh chấp là tài sản chung của 
+hộ gia đình ông H2, bị đơn và người có quyền lợi nghĩa vụ liên quan có yêu cầu 
+chia  tài  sản  chung  và  đòi  chi  phí  sửa  chữa  nhà  nhưng  Tòa  án  sơ  thẩm  chưa  giải 
+thích để bị đơn và người có quyền lợi nghĩa vụ liên quan làm đơn phản tố và đơn 
+yêu cầu độc lập để thụ lý và xem xét giải quyết tại cấp sơ thẩm.  
+
+Cần thiết phải hủy toàn bộ bản án dân sự sơ thẩm của Tòa án nhân dân Quận 7 
+để xem xét đưa đầy đủ người có quyền lợi nghĩa vụ liên quan vào tham gia tố tụng, 
+và hướng dẫn các đương sự làm thủ tục khởi kiện theo quy định để giải quyết toàn 
+diện vụ án. 
+
+Từ các phân tích trên, đề nghị Hội đồng xét xử, hủy bản án dân sự sơ thẩm 
+
+như nhận định trên.  
+
+
+tommy@RMIT-FREE-WIFI TaipyLLM % 
